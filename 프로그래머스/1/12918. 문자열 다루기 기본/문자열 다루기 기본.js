@@ -1,0 +1,1 @@
+const solution = (s) => !(/[^0-9]/g).test(s) && (s.length === 4 || s.length === 6)
