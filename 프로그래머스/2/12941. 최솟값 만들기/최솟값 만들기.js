@@ -1,19 +1,19 @@
 // solution #1
-// const solution = (A, B) => {
-//     const sortA = A.sort((a, b) => a - b); // [1,2,4,5]
-//     const sortB = B.sort((a, b) => b - a); // [5,3,2]
+const solution = (A, B) => {
+    const sortA = A.sort((a, b) => a - b);
+    const sortB = B.sort((a, b) => b - a); 
     
-//     return sortA.reduce((acc, curr, i) => acc + curr * sortB[i], 0);
-// }
+    return sortA.reduce((acc, curr, i) => acc + curr * sortB[i], 0);
+}
 
 // solution #2
-const solution = (A, B) => {
-    const sortA = A.sort((a, b) => a - b); // [1,2,4,5]
-    const sortB = B.sort((a, b) => b - a); // [5,3,2]
-	let result = 0;
+// const solution = (A, B) => {
+//     const sortA = A.sort((a, b) => a - b); 
+//     const sortB = B.sort((a, b) => b - a); 
+// 	let result = 0;
     
-	sortA.forEach((x, i) => {
-		result += x * sortB[i];
-    })
-	return result;
-}
+// 	sortA.forEach((x, i) => {
+// 		result += x * sortB[i];
+//     })
+// 	return result;
+// }
