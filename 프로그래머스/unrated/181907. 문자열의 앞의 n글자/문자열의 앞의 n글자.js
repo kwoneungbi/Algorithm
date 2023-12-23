@@ -1,0 +1,1 @@
+const solution = (my_string, n) => [...my_string].filter((x, i) => i < n).join("")
