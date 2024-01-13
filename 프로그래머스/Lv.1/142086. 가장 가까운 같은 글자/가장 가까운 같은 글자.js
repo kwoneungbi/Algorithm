@@ -1,3 +1,4 @@
+// solution #1
 const solution = s => {
     var result = [];
     
@@ -8,3 +9,15 @@ const solution = s => {
     
     return result;
 }
+
+// solution #2
+// const solution = (s) =>
+//   [...s].map((char, i) => {
+//     const count = s.slice(0, i).lastIndexOf(char);
+//     return count < 0 ? count : i - count;
+//   });
+
+// const solution = s => {
+//     const result = [];
+//     return [...s].map(x => result.includes(x) ? result.lastIndexOf(x) : -1 && result.push(x))
+// }
