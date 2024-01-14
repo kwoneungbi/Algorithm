@@ -33,3 +33,9 @@ const solution = (s, n) => {
 //     else if (upper.indexOf(char) > -1) return upper[(upper.indexOf(char) + n) % upper.length]
 //   }).join('')).join(' ')
 // }
+
+// solution #3
+// const solution = (s, n) => s.replace(/([a-z])|([A-Z])/g, (c, lowerCase) => {
+//     var startCode = lowerCase ? 'a'.charCodeAt(0) : 'A'.charCodeAt(0)
+//     return String.fromCharCode((c.charCodeAt(0) - startCode + n) % 26 + startCode)
+// })
