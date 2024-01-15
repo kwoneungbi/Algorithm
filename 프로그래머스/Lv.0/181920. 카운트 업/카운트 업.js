@@ -6,3 +6,6 @@ const solution = (start_num, end_num) => {
     }
     return result;
 }
+
+// solution #2
+// const solution = (start_num, end_num) => Array.from(Array(end_num - start_num + 1), (_, i) => start_num + i);
