@@ -1,0 +1,1 @@
+const solution = (my_string, index_list) => index_list.map(x => my_string[x]).join("");
