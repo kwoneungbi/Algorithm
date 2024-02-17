@@ -1,0 +1,1 @@
+const solution = (my_string) => [...my_string].map(x => /[a-z]/.test(x) ? x.toUpperCase() : x.toLowerCase()).join("");
