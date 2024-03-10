@@ -6,4 +6,7 @@
 // }
 
 // solution #2
-const solution = (myString) => myString.replace(/[a-k]/g,'l')
+// const solution = (myString) => myString.replace(/[a-k]/g,'l');
+
+// solution #3
+const solution = (myString) => [...myString].map(v => v < 'l' ? 'l' : v).join('');
