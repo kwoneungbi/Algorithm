@@ -1,0 +1,1 @@
+const solution = (my_string, indices) => [...my_string].filter((x, i) => !indices.includes(i)).join("");
